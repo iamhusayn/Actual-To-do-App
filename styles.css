@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(64, 74, 194);
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0 auto;
+    max-width: 300px;
+
+}
+
+.stats-container {
+    border: 2px solid greenyellow;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 100%;
+}
+
+.details {
+    width: 100%;
+}
+
+#progressbar {
+    background-color: grey;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#progress {
+    width: 75%;
+    height: 20px;
+    background-color: green;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#numbers {
+    width: 100px;
+    height: 100px;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 900;
+} 
+
+form {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 16px;
+    flex: 1;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    /* color: white; */
+
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#tasklist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task input {
+    width: 20px;
+    height: 20px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: red;
+}
+
+.taskItem button {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
